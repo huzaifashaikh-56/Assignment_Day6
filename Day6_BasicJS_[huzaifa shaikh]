@@ -1,5 +1,5 @@
 // basics.js
-
+// task 1
 
 let name = "Huzaifa";         
 const age = 21;               
@@ -22,3 +22,155 @@ console.log("Age (Number):", age);
 console.log("Is Student (Boolean):", isStudent);
 console.log("Favorite Subjects (Array):", favoriteSubjects);
 console.log("Student Info (Object):", studentInfo);
+
+//output
+Name (String): Huzaifa
+Age (Number): 21
+Is Student (Boolean): true
+Favorite Subjects (Array): [ 'Math', 'Computer Science', 'Physics' ]
+Student Info (Object): { 
+  name: 'Huzaifa Shaikh', 
+  age: 21, 
+  isStudent: true, 
+  subjects: [ 'Math', 'Computer Science', 'Physics' ] 
+}
+
+
+// calculator.js
+//task 2
+
+// Take two numbers as input
+let num1 = parseFloat(prompt("Enter the first number:"));
+let num2 = parseFloat(prompt("Enter the second number:"));
+
+// Perform operations
+let sum = num1 + num2;
+let difference = num1 - num2;
+let product = num1 * num2;
+let quotient = num1 / num2;
+
+// Display results using console.log()
+console.log("Addition:", sum);
+console.log("Subtraction:", difference);
+console.log("Multiplication:", product);
+console.log("Division:", quotient);
+
+// Display results using alert()
+alert("Addition: " + sum +
+      "\nSubtraction: " + difference +
+      "\nMultiplication: " + product +
+      "\nDivision: " + quotient);
+
+//output
+Addition: 12
+Subtraction: 8
+Multiplication: 20
+Division: 5
+
+
+  // gradeChecker.js 
+  // task 3
+
+
+// Take marks as input
+let marks = parseFloat(prompt("Enter your marks (0-100):"));
+
+// Check grade using if-else
+let grade;
+
+if (marks >= 90 && marks <= 100) {
+  grade = 'A';
+} else if (marks >= 80 && marks < 90) {
+  grade = 'B';
+} else if (marks >= 70 && marks < 80) {
+  grade = 'C';
+} else if (marks >= 60 && marks < 70) {
+  grade = 'D';
+} else if (marks >= 0 && marks < 60) {
+  grade = 'F';
+} else {
+  grade = 'Invalid input';
+}
+
+// Output the grade
+console.log("Your grade is:", grade);
+alert("Your grade is: " + grade);
+
+//output
+ If user enters: 95
+ Your grade is: A
+
+ If user enters: 83
+ Your grade is: B
+
+
+// loops.js
+// task 4
+
+
+// For loop: print numbers from 1 to 20
+console.log("For Loop: Numbers from 1 to 20");
+for (let i = 1; i <= 20; i++) {
+  console.log(i);
+}
+
+// While loop: print even numbers from 2 to 10
+console.log("While Loop: Even numbers from 2 to 10");
+let num = 2;
+while (num <= 10) {
+  console.log(num);
+  num += 2;
+}
+
+//output 
+For Loop: Numbers from 1 to 20
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+While Loop: Even numbers from 2 to 10
+2
+4
+6
+8
+10
+
+
+
+// functions.js
+// task 5
+
+
+// Function to greet the user
+function greetUser(name) {
+  console.log("Welcome, " + name + "!");
+}
+
+// Function to calculate the square of a number
+function square(number) {
+  return number * number;
+}
+
+// Example usage
+greetUser("Huzaifa");                 // Output: Welcome, Huzaifa!
+console.log("Square of 5 is:", square(5));  // Output: Square of 5 is: 25
+
+//output 
+Welcome, Huzaifa!
+Square of 5 is: 25
