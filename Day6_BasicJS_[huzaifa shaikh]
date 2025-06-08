@@ -1,0 +1,24 @@
+// basics.js
+
+
+let name = "Huzaifa";         
+const age = 21;               
+var isStudent = true;      
+
+// Array
+let favoriteSubjects = ["Math", "Computer Science", "Physics"];
+
+// Object
+const studentInfo = {
+  name: "Huzaifa Shaikh",
+  age: 21,
+  isStudent: true,
+  subjects: favoriteSubjects
+};
+
+// Logging all variables
+console.log("Name (String):", name);
+console.log("Age (Number):", age);
+console.log("Is Student (Boolean):", isStudent);
+console.log("Favorite Subjects (Array):", favoriteSubjects);
+console.log("Student Info (Object):", studentInfo);
